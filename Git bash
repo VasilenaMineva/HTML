@@ -1,0 +1,15 @@
+FileStream fs = new FileStream(FILE_NAME, FileMode.CreateNew);
+BinaryWriter bw = new BinaryWriter(fs);
+for (inti= 0; i < 11; i++)
+t
+bw.Write(1);
+bw.close();
+fs.close();
+using (fs = new FileStream(FILE_NAME, FileMode.Open, FileAccess.Read))
+using (BinaryReader br = new BinaryReader(fs))
+I
+for (int i= 0 1<1; 1+)
+t
+Console.WriteLine(br.ReadInt32());
+J
+fs.close();
